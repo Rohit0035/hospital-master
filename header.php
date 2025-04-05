@@ -35,11 +35,14 @@
     <link href="css/style.css" rel="stylesheet">
      <!-- custom css -->
     <link href="css/custom.css" rel="stylesheet">
+    <!-- select2 -->
+    <link href="vendor/select2/css/select2.min.css" rel="stylesheet" />
+
 
 
 </head>
 
-<body data-typography="poppins" data-theme-version="light" data-layout="vertical" data-nav-headerbg="black"
+<body data-typography="poppins" data-theme-version="light" data-layout="horizontal" data-nav-headerbg="black"
     data-headerbg="color_1">
 
     <!--*******************
@@ -1050,8 +1053,8 @@
                             <li><a href="mas-area.php">Area</a></li>
                             <li><a href="mas-nature.php">Nature</a></li>
                             <li><a href="mas-department.php">Department</a></li>
-                            <li><a href="#">Consultant Specialization</a></li>
-                            <li><a href="#">Consultant</a></li>
+                            <li><a href="mas-cons-specialization.php">Consultant Specialization</a></li>
+                            <li><a href="mas-consultant-list.php">Consultant</a></li>
                             <li><a href="#">Staff Master</a></li>
                             <li><a href="#">Case Master</a></li>
                             <li><a href="#">Billing Charges Group</a></li>

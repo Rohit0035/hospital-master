@@ -320,7 +320,7 @@
         Scripts
     ***********************************-->
     <!-- Required vendors -->
-     <script src="vendor/global/global.min.js"></script>
+    <script src="vendor/global/global.min.js"></script>
 	<script src="vendor/chart.js/Chart.bundle.min.js"></script>
 	<script src="vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
 	<script src="vendor/apexchart/apexchart.js"></script>
@@ -329,6 +329,9 @@
 	<script src="js/dashboard/dashboard-1.js"></script>
 	<script src="vendor/draggable/draggable.js"></script>
 	
+	<!-- select2 -->
+	<script src="vendor/select2/js/select2.full.min.js"></script>
+    <script src="js/plugins-init/select2-init.js"></script>
 	
 	<!-- tagify -->
 	<script src="vendor/tagify/dist/tagify.js"></script>
@@ -353,6 +356,23 @@
 	<script src="js/deznav-init.js"></script>
 	<script src="js/demo.js"></script>
     <script src="js/styleSwitcher.js"></script>
-	
+	<!-- validate -->
+	<script>
+		(function () {
+		  'use strict'
+		  var forms = document.querySelectorAll('.needs-validation')
+		  Array.prototype.slice.call(forms)
+			.forEach(function (form) {
+			  form.addEventListener('submit', function (event) {
+				if (!form.checkValidity()) {
+				  event.preventDefault()
+				  event.stopPropagation()
+				}
+
+				form.classList.add('was-validated')
+			  }, false)
+			})
+		})()
+	</script>
 </body>
 </html>
