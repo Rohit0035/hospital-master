@@ -1063,7 +1063,7 @@
                             <li><a href="#">Ledger A/C</a></li>
                             <li><a href="#">Organization</a></li>
                             <li><a href="#">Caste Master</a></li>
-                            <li><a href="#">Doctor Master</a></li>
+                            <li><a href="mas-doctor.php">Doctor Master</a></li>
                             <li><a href="#">Religion</a></li>
                             <li><a href="#">Role & Permission</a></li>
                         </ul>
@@ -1072,12 +1072,12 @@
                             <div class="menu-icon">
                                <i class="fa fa-user-md" aria-hidden="true"></i>
                             </div>
-                            <span class="nav-text">IPD</span>
+                            <span class="nav-text">OPD</span>
                         </a>
                         <ul aria-expanded="false">
                             <li><a class="has-arrow" href="javascript:void(0);" aria-expanded="false">Transaction</a>
                                 <ul aria-expanded="false">
-                                    <li><a href="registration-opd.html">Registration / OPD</a></li>
+                                    <li><a href="opd-registration.php">Registration / OPD</a></li>
                                     <li><a href="opd-charges.html">OPD Charges</a></li>
                                     <li><a href="refund-entry.html">Refund Entry</a></li>
                                     <li><a href="opd-prescription-entry.html">OPD Prescription Entry</a></li>
