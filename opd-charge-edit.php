@@ -21,7 +21,7 @@
                     </svg>
                     OPD </a>
             </li>
-            <li class="breadcrumb-item active"><a href="javascript:void(0)">OPD Registration</a></li>
+            <li class="breadcrumb-item active"><a href="javascript:void(0)">OPD Charges</a></li>
         </ol>
         <span class="" style="float:right;">
             <a href="opd-registration.php" class="btn btn-success">Back</a>
@@ -32,7 +32,7 @@
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-body">
-                        <div class="card-header p-2">Edit OPD Registration </div>
+                        <div class="card-header p-2">Add OPD Charges </div>
                         <form class="needs-validation">
                             <div class="row">
                                 <div class="col-md-4">
@@ -482,21 +482,10 @@
                                                 </label>
                                             </div>
                                             <div class="col-md-8">
-                                                <select class="default-select wide form-control" id="validationCustom03"
-                                                    required>
-                                                    <option selected disabled value="">Please select ID Type</option>
-                                                    <option value="passport">Passport</option>
-                                                    <option value="driver_license">Driver’s License</option>
-                                                    <option value="national_id">National ID Card</option>
-                                                    <option value="social_security">Social Security Number (SSN)
-                                                    </option>
-                                                    <option value="aadhaar">Aadhaar Card</option>
-                                                    <option value="voter_id">Voter ID</option>
-                                                    <option value="pan_card">PAN Card</option>
-                                                    <option value="resident_permit">Resident Permit</option>
-                                                </select>
+                                                <input type="number" class="form-control" id="validationCustom01"
+                                                    placeholder="ID Type ...." required>
                                                 <div class="invalid-feedback">
-                                                    Please select a ID Type
+                                                    Please enter a ID Type
                                                 </div>
                                             </div>
                                         </div>
@@ -865,12 +854,12 @@
                                 </div>
                             </div>
                         </form>
-                        <div class="col-md-12 mt-3">
-                            <button class="btn btn-primary">Submit</button>
-                            <button class="btn btn-primary ms-2">Print</button>
-                        </div>
+                    </div>
+                    <div class="col-md-12 mt-3">
+                        <button class="btn btn-primary">Submit</button>
                     </div>
                 </div>
+                </form>
             </div>
         </div>
     </div>

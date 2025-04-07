@@ -33,7 +33,7 @@
 
     <!-- Style css -->
     <link href="css/style.css" rel="stylesheet">
-     <!-- custom css -->
+    <!-- custom css -->
     <link href="css/custom.css" rel="stylesheet">
     <!-- select2 -->
     <link href="vendor/select2/css/select2.min.css" rel="stylesheet" />
@@ -66,8 +66,8 @@
             Nav header start
         ***********************************-->
         <div class="nav-header">
-            <a href="index.html" class="brand-logo">
-                LOGO
+            <a href="index.php" class="brand-logo">
+                <b>DR. PERWEZ HOSPITAL</b>
             </a>
             <div class="nav-control">
                 <div class="hamburger">
@@ -1042,7 +1042,7 @@
                 <ul class="metismenu" id="menu">
                     <li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
                             <div class="menu-icon">
-                              <i class="fa fa-user-md" aria-hidden="true"></i>
+                                <i class="fa fa-user-md" aria-hidden="true"></i>
                             </div>
                             <span class="nav-text">Master</span>
                         </a>
@@ -1070,7 +1070,7 @@
                     </li>
                     <li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
                             <div class="menu-icon">
-                               <i class="fa fa-user-md" aria-hidden="true"></i>
+                                <i class="fa fa-user-md" aria-hidden="true"></i>
                             </div>
                             <span class="nav-text">OPD</span>
                         </a>
@@ -1078,7 +1078,7 @@
                             <li><a class="has-arrow" href="javascript:void(0);" aria-expanded="false">Transaction</a>
                                 <ul aria-expanded="false">
                                     <li><a href="opd-registration.php">Registration / OPD</a></li>
-                                    <li><a href="opd-charges.html">OPD Charges</a></li>
+                                    <li><a href="opd-charge-list.php">OPD Charges</a></li>
                                     <li><a href="refund-entry.html">Refund Entry</a></li>
                                     <li><a href="opd-prescription-entry.html">OPD Prescription Entry</a></li>
                                     <li><a href="patient-search.html">Patient Search</a></li>
@@ -1106,43 +1106,62 @@
                     </li>
                     <li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
                             <div class="menu-icon">
-                               <i class="fa fa-user-md" aria-hidden="true"></i>
+                                <i class="fa fa-user-md" aria-hidden="true"></i>
                             </div>
                             <span class="nav-text">IPD</span>
                         </a>
                         <ul aria-expanded="false">
-                            <li><a class="has-arrow" href="javascript:void(0);" aria-expanded="false">Transaction</a>
+                            <li><a class="has-arrow" href="javascript:void(0);" aria-expanded="false">Master</a>
                                 <ul aria-expanded="false">
-                                    <li><a href="registration-opd.html">Registration / OPD</a></li>
-                                    <li><a href="opd-charges.html">OPD Charges</a></li>
-                                    <li><a href="refund-entry.html">Refund Entry</a></li>
-                                    <li><a href="opd-prescription-entry.html">OPD Prescription Entry</a></li>
-                                    <li><a href="patient-search.html">Patient Search</a></li>
-                                    <li><a href="medical-certificate-entry.html">Medical Certificate Entry</a></li>
+                                    <li><a href="ipd-master-roomcategory.php">Rooms Category</a></li>
+                                    <li><a href="ipd-mas-nursingstation.php">Nursing Station</a></li>
+                                    <li><a href="ipd-mas-rooms.php">Rooms</a></li>
                                 </ul>
                             </li>
-                            <li>
-                                <a class="has-arrow" href="javascript:void(0);" aria-expanded="false">Reports</a>
+                            <li><a class="has-arrow" href="javascript:void(0);" aria-expanded="false">Transaction</a>
                                 <ul aria-expanded="false">
-                                    <li><a href="opd-registration.html">OPD Registration</a></li>
-                                    <li><a href="area-wise-opd-registration.html">Area Wise OPD Registration</a></li>
-                                    <li><a href="department-wise-opd-registration.html">Department Wise OPD
-                                            Registration</a></li>
-                                    <li><a href="case-wise-opd-registration.html">Case Wise OPD Registration</a></li>
-                                    <li><a href="consultant-opd-registration.html">Consultant OPD Registration</a></li>
-                                    <li><a href="opd-charges.html">OPD Charges</a></li>
-                                    <li><a href="group-wise-charge.html">Group Wise Charge</a></li>
-                                    <li><a href="emergency-statistics.html">Emergency Statistics</a></li>
-                                    <li><a href="opd-summary.html">OPD Summary</a></li>
-                                    <li><a href="opd-refund.html">OPD Refund</a></li>
-                                    <li><a href="estimate-for-treatment.html">Estimate For Treatment</a></li>
+                                    <li><a href="ipd-tran-ipdregistration.php">IPD Registration</a></li>
+                                    <li><a href="payment-receive.php">Payment Receive</a></li>
+                                    <li><a href="room-change.php">Room Change</a></li>
+                                    <li><a href="bill-charges.php">Bill Charges</a></li>
+                                    <li><a href="delivery.php">Delivery</a></li>
+                                    <li><a href="patients-history.php">Patient’s History</a></li>
+                                    <li><a href="ipd-refund.php">IPD Refund</a></li>
+                                    <li><a href="patient-discharge.php">Patient Discharge</a></li>
+                                    <li><a href="discharge-card.php">Discharge Card</a></li>
+                                    <li><a href="medical-certificate.php">Medical Certificate</a></li>
+                                    <li><a href="mlc.php">MLC</a></li>
+                                    <li><a href="oxygen-given.php">Oxygen Given</a></li>
+                                    <li><a href="death-certificate.php">Death Certificate</a></li>
+                                    <li><a href="ipd-consultant-change.php">IPD Consultant Change</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="has-arrow" href="javascript:void(0);" aria-expanded="false">Reports</a>
+                                <ul aria-expanded="false">
+                                    <li><a href="index.php">Rooms Category</a></li>
+                                    <li><a href="index.php">Nursing Station</a></li>
+                                    <li><a href="index.php">Rooms</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="has-arrow" href="javascript:void(0);" aria-expanded="false">O.T Management</a>
+                                <ul aria-expanded="false">
+                                    <li><a href="index.php">Rooms Category</a></li>
+                                    <li><a href="index.php">Nursing Station</a></li>
+                                    <li><a href="index.php">Rooms</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="has-arrow" href="javascript:void(0);" aria-expanded="false">Help Desk</a>
+                                <ul aria-expanded="false">
+                                    <li><a href="index.php">Rooms Category</a></li>
+                                    <li><a href="index.php">Nursing Station</a></li>
+                                    <li><a href="index.php">Rooms</a></li>
                                 </ul>
                             </li>
                         </ul>
                     </li>
                     <li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
                             <div class="menu-icon">
-                               <i class="fa fa-user-md" aria-hidden="true"></i>
+                                <i class="fa fa-user-md" aria-hidden="true"></i>
                             </div>
                             <span class="nav-text">MIS</span>
                         </a>
@@ -1178,7 +1197,7 @@
                     </li>
                     <li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
                             <div class="menu-icon">
-                               <i class="fa fa-user-md" aria-hidden="true"></i>
+                                <i class="fa fa-user-md" aria-hidden="true"></i>
                             </div>
                             <span class="nav-text">Medical Store</span>
                         </a>
@@ -1214,7 +1233,7 @@
                     </li>
                     <li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
                             <div class="menu-icon">
-                               <i class="fa fa-user-md" aria-hidden="true"></i>
+                                <i class="fa fa-user-md" aria-hidden="true"></i>
                             </div>
                             <span class="nav-text">Account</span>
                         </a>
@@ -1250,7 +1269,7 @@
                     </li>
                     <li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
                             <div class="menu-icon">
-                               <i class="fa fa-user-md" aria-hidden="true"></i>
+                                <i class="fa fa-user-md" aria-hidden="true"></i>
                             </div>
                             <span class="nav-text">Utility</span>
                         </a>
@@ -1286,7 +1305,7 @@
                     </li>
                     <li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
                             <div class="menu-icon">
-                               <i class="fa fa-user-md" aria-hidden="true"></i>
+                                <i class="fa fa-user-md" aria-hidden="true"></i>
                             </div>
                             <span class="nav-text">Messaging</span>
                         </a>
@@ -1322,7 +1341,7 @@
                     </li>
                     <li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
                             <div class="menu-icon">
-                               <i class="fa fa-user-md" aria-hidden="true"></i>
+                                <i class="fa fa-user-md" aria-hidden="true"></i>
                             </div>
                             <span class="nav-text">Permission</span>
                         </a>

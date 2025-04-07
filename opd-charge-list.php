@@ -21,10 +21,10 @@
                     </svg>
                     OPD </a>
             </li>
-            <li class="breadcrumb-item active"><a href="javascript:void(0)">OPD Registration</a></li>
+            <li class="breadcrumb-item active"><a href="javascript:void(0)">OPD Charges</a></li>
         </ol>
         <span class="" style="float:right;">
-            <a href="opd-registration-add.php" class="btn btn-success">Add New</a>
+            <a href="opd-charge-add.php" class="btn btn-success">Add New</a>
         </span>
     </div>
     <div class="container-fluid">
@@ -36,34 +36,46 @@
                             <table id="example4" class="display table" style="min-width: 1000px">
                                 <thead>
                                     <tr>
-                                        <th>S. No.</th>
-                                        <th>Patient Name</th>
-                                        <th>Age</th>
-                                        <th>Gender</th>
-                                        <th>Phone No.</th>
-                                        <th>UHID No.</th>
-                                        <th>OPD No.</th>
-                                        <th>Department</th>
-                                        <th>Consultant Doctor</th>
+                                        <th>Doc No.</th>
+                                        <th>Date</th>
+                                        <th>OPD Registration No.</th>
+                                        <th>IPD No.</th>
+                                        <th>Rate Mode</th>
+                                        <th>Case Detail</th>
+                                        <th>Consulting Doctor</th>
+                                        <th>Referring Doctor</th>
+                                        <th>Address</th>
+                                        <th>Remark</th>
+                                        <th>Gross Total</th>
+                                        <th>Discount %</th>
+                                        <th>Discount Amount</th>
+                                        <th>Discount By</th>
+                                        <th>Total</th>
                                         <th>Payment Mode</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
+                                        <td>DOC12345</td>
+                                        <td>2025-03-07</td>
                                         <td>1</td>
-                                        <td>Miss. Jane Doe</td>
-                                        <td>30</td>
-                                        <td>Female</td>
-                                        <td>+91 9876543210</td>
-                                        <td>UH123456</td>
-                                        <td>OPD789</td>
-                                        <td>Cardiology</td>
+                                        <td>IPD123</td>
+                                        <td>Normal</td>
+                                        <td>General</td>
                                         <td>Dr. John Doe</td>
+                                        <td>Dr. Smith</td>
+                                        <td>123 Main St.</td>
+                                        <td>Test remark</td>
+                                        <td>5000</td>
+                                        <td>10</td>
+                                        <td>500</td>
+                                        <td>Admin</td>
+                                        <td>4500</td>
                                         <td>Cash</td>
                                         <td>
                                             <div class="d-flex">
-                                                <a href="opd-registration-edit.php" class="btn btn-primary btn-sm me-2">
+                                                <a href="opd-charge-edit.php" class="btn btn-primary btn-sm me-2">
                                                     <i class="fa fa-edit"></i>
                                                 </a>
                                                 <a href="#" class="btn btn-danger btn-sm">
@@ -74,7 +86,6 @@
                                     </tr>
                                 </tbody>
                             </table>
-
                         </div>
                     </div>
                 </div>

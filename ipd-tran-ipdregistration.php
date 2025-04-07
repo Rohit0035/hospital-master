@@ -19,12 +19,12 @@
                         <path d="M6.375 15.5833V8.5H10.625V15.5833" stroke="#2C2C2C" stroke-linecap="round"
                             stroke-linejoin="round" />
                     </svg>
-                    OPD </a>
+                    IPD / Transaction </a>
             </li>
-            <li class="breadcrumb-item active"><a href="javascript:void(0)">OPD Registration</a></li>
+            <li class="breadcrumb-item active"><a href="javascript:void(0)">IPD Registration</a></li>
         </ol>
         <span class="" style="float:right;">
-            <a href="opd-registration-add.php" class="btn btn-success">Add New</a>
+            <a href="ipd-tran-ipd-add-registration.php" class="btn btn-success">Add New</a>
         </span>
     </div>
     <div class="container-fluid">
@@ -42,7 +42,7 @@
                                         <th>Gender</th>
                                         <th>Phone No.</th>
                                         <th>UHID No.</th>
-                                        <th>OPD No.</th>
+                                        <th>IPD No.</th>
                                         <th>Department</th>
                                         <th>Consultant Doctor</th>
                                         <th>Payment Mode</th>
@@ -57,13 +57,14 @@
                                         <td>Female</td>
                                         <td>+91 9876543210</td>
                                         <td>UH123456</td>
-                                        <td>OPD789</td>
+                                        <td>IPD789</td>
                                         <td>Cardiology</td>
                                         <td>Dr. John Doe</td>
                                         <td>Cash</td>
                                         <td>
                                             <div class="d-flex">
-                                                <a href="opd-registration-edit.php" class="btn btn-primary btn-sm me-2">
+                                                <a href="ipd-tran-ipd-edit-registration.php"
+                                                    class="btn btn-primary btn-sm me-2">
                                                     <i class="fa fa-edit"></i>
                                                 </a>
                                                 <a href="#" class="btn btn-danger btn-sm">
@@ -74,7 +75,6 @@
                                     </tr>
                                 </tbody>
                             </table>
-
                         </div>
                     </div>
                 </div>
