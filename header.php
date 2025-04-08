@@ -1079,16 +1079,16 @@
                                 <ul aria-expanded="false">
                                     <li><a href="opd-registration.php">Registration / OPD</a></li>
                                     <li><a href="opd-charge-list.php">OPD Charges</a></li>
-                                    <li><a href="refund-entry.html">Refund Entry</a></li>
-                                    <li><a href="opd-prescription-entry.html">OPD Prescription Entry</a></li>
-                                    <li><a href="patient-search.html">Patient Search</a></li>
-                                    <li><a href="medical-certificate-entry.html">Medical Certificate Entry</a></li>
+                                    <li><a href="opd-refund.php">Refund Entry</a></li>
+                                    <li><a href="opd-prescription.php">OPD Prescription Entry</a></li>
+                                    <li><a href="opd-patient-search.php">Patient Search</a></li>
+                                    <li><a href="opd-medicalcertificate.php">Medical Certificate Entry</a></li>
                                 </ul>
                             </li>
                             <li>
                                 <a class="has-arrow" href="javascript:void(0);" aria-expanded="false">Reports</a>
                                 <ul aria-expanded="false">
-                                    <li><a href="opd-registration.html">OPD Registration</a></li>
+                                    <li><a href="opd-report-opdregistration.php">OPD Registration</a></li>
                                     <li><a href="area-wise-opd-registration.html">Area Wise OPD Registration</a></li>
                                     <li><a href="department-wise-opd-registration.html">Department Wise OPD
                                             Registration</a></li>
@@ -1171,7 +1171,7 @@
                                     <li><a href="registration-opd.html">Registration / OPD</a></li>
                                     <li><a href="opd-charges.html">OPD Charges</a></li>
                                     <li><a href="refund-entry.html">Refund Entry</a></li>
-                                    <li><a href="opd-prescription-entry.html">OPD Prescription Entry</a></li>
+                                    <li><a href="opd-prescription.php">OPD Prescription Entry</a></li>
                                     <li><a href="patient-search.html">Patient Search</a></li>
                                     <li><a href="medical-certificate-entry.html">Medical Certificate Entry</a></li>
                                 </ul>

@@ -19,12 +19,12 @@
                         <path d="M6.375 15.5833V8.5H10.625V15.5833" stroke="#2C2C2C" stroke-linecap="round"
                             stroke-linejoin="round" />
                     </svg>
-                    OPD </a>
+                    OPD / Transaction</a>
             </li>
-            <li class="breadcrumb-item active"><a href="javascript:void(0)">Edit OPD Charges</a></li>
+            <li class="breadcrumb-item active"><a href="javascript:void(0)">Add OPD Prescription </a></li>
         </ol>
         <span class="" style="float:right;">
-            <a href="opd-charge-list.php" class="btn btn-success">Back</a>
+            <a href="opd-prescription.php" class="btn btn-success">Back</a>
         </span>
     </div>
     <div class="container-fluid">
@@ -33,25 +33,28 @@
                 <div class="col-md-12">
                     <div class="card">
                         <div class="card-body">
-                            <!-- <div class="card-header p-2 text-info fw-bold">Add OPD Charges </div> -->
+                            <div class="card-header p-2 text-info fw-bold">Patient Detail</div>
                             <div class="row mt-3">
-                                <div class="col-md-3 mb-3">
+                                <div class="col-md-4 mb-3">
                                     <div class="row">
                                         <div class="col-md-4">
-                                            <label class="col-form-label" for="validationCustom01">Doc No
+                                            <label class="col-form-label" for="validationCustom01">Consultant Doctor
                                                 <span class="text-danger">*</span>
                                             </label>
                                         </div>
                                         <div class="col-md-8">
-                                            <input type="number" class="form-control" id="validationCustom01"
-                                                placeholder="Doc No..." required>
+                                            <select class="default-select wide form-control">
+                                                <option value=" Yes">--Select Consultant Doctor --</option>
+                                                <option value=" "></option>
+                                                <option value=""></option>
+                                            </select>
                                             <div class="invalid-feedback">
-                                                Please enter a Doc No
+                                                Please select
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-3 mb-3">
+                                <div class="col-md-4 mb-3">
                                     <div class="row">
                                         <div class="col-md-4">
                                             <label class="col-form-label" for="validationCustom01">Date
@@ -67,7 +70,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-3 mb-3">
+                                <div class="col-md-4 mb-3">
                                     <div class="row">
                                         <div class="col-md-4">
                                             <label class="col-form-label" for="validationCustom01">Find OPD
@@ -87,59 +90,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-3 mb-3">
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <label class="col-form-label" for="validationCustom01">Find IPD
-                                                <span class="text-danger">*</span>
-                                            </label>
-                                        </div>
-                                        <div class="col-md-8">
-                                            <select class="default-select wide form-control" id="validationCustom03"
-                                                required>
-                                                <option selected disabled value="">Please select IPD No.
-                                                </option>
-                                                <option value="html"></option>
-                                            </select>
-                                            <div class="invalid-feedback">
-                                                Please select a IPD
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 mb-3">
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <label class="col-form-label" for="validationCustom01">Rate Mode
-                                                <span class="text-danger">*</span>
-                                            </label>
-                                        </div>
-                                        <div class="col-md-8">
-                                            <select class="default-select wide form-control" id="validationCustom03"
-                                                required>
-                                                <option selected disabled value="">Please select Rate Mode
-                                                </option>
-                                                <option value="Normal">Normal</option>
-                                                <option value="High">High</option>
-                                                <option value="Moderate">Moderate</option>
-                                                <option value="Low">Low</option>
-                                            </select>
-                                            <div class="invalid-feedback">
-                                                Please Select a Rate Mode
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-12">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="card-header p-2 text-info fw-bold">Patient Detail</div>
-                            <div class="row mt-3">
                                 <div class="col-md-4 mb-3">
                                     <div class="row">
                                         <div class="col-md-4">
@@ -159,19 +109,15 @@
                                 <div class="col-md-4 mb-3">
                                     <div class="row">
                                         <div class="col-md-4">
-                                            <label class="col-form-label" for="validationCustom01"> OPD No.
+                                            <label class="col-form-label" for="validationCustom01"> Next Appt.
                                                 <span class="text-danger">*</span>
                                             </label>
                                         </div>
                                         <div class="col-md-8">
-                                            <select class="default-select wide form-control" id="validationCustom03"
-                                                required>
-                                                <option selected disabled value="">Please select OPD No.
-                                                </option>
-                                                <option value="html"></option>
-                                            </select>
+                                            <input type="text" class="form-control" id="validationCustom01"
+                                                placeholder="Next Appt...." required>
                                             <div class="invalid-feedback">
-                                                Please select a OPD No
+                                                Please enter a Next Appt.
                                             </div>
                                         </div>
                                     </div>
@@ -245,6 +191,14 @@
                                                     <option value="Month">Month</option>
                                                     <option value="days">Days</option>
                                                 </select>
+                                                <select class="default-select wide form-control" id="validationCustom03"
+                                                    required>
+                                                    <option selected disabled value="">Please select Sex
+                                                    </option>
+                                                    <option value="Male">Male</option>
+                                                    <option value="Female">Female</option>
+                                                    <option value="Other">Other</option>
+                                                </select>
                                             </div>
                                             <div class="invalid-feedback">
                                                 Please select Age
@@ -274,45 +228,6 @@
                                 <div class="col-md-4 mb-3">
                                     <div class="row">
                                         <div class="col-md-4">
-                                            <label class="col-form-label" for="validationCustom01">Reff. Doctor
-                                                <span class="text-danger">*</span>
-                                            </label>
-                                        </div>
-                                        <div class="col-md-8">
-                                            <select class="default-select wide form-control">
-                                                <option value=" Yes">--Select Reff. Doctor --</option>
-                                                <option value=" "></option>
-                                                <option value=""></option>
-                                            </select>
-                                            <div class="invalid-feedback">
-                                                Please select a Caste
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 mb-3">
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <label class="col-form-label" for="validationCustom01">Consultant Doctor
-                                                <span class="text-danger">*</span>
-                                            </label>
-                                        </div>
-                                        <div class="col-md-8">
-                                            <select class="default-select wide form-control">
-                                                <option value=" Yes">--Select onsultant Doctor --</option>
-                                                <option value=" "></option>
-                                                <option value=""></option>
-                                            </select>
-                                            <div class="invalid-feedback">
-                                                Please select
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-4 mb-3">
-                                    <div class="row">
-                                        <div class="col-md-4">
                                             <label class="col-form-label" for="validationCustom03"> Address
                                                 <span class="text-danger">*</span>
                                             </label>
@@ -328,174 +243,204 @@
                                         </div>
                                     </div>
                                 </div>
+
+                                <div class="col-md-12 mb-3">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <label class="col-form-label" for="validationCustom01">
+                                                Case & Complaints <span class="text-danger">*</span>
+                                            </label>
+                                        </div>
+                                        <div class="col-md-10">
+                                            <textarea class="form-control" id="validationCustom03" required rows="4"
+                                                placeholder="Enter case details and complaints"></textarea>
+                                            <div class="invalid-feedback">
+                                                Please enter case details and complaints
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12 mb-3">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <label class="col-form-label" for="validationCustom01">
+                                               History of Present Illness <span class="text-danger">*</span>
+                                            </label>
+                                        </div>
+                                        <div class="col-md-10">
+                                            <textarea class="form-control" id="validationCustom03" required rows="4"
+                                                placeholder="Enter History of Present Illness"></textarea>
+                                            <div class="invalid-feedback">
+                                                Please enter History of Present Illness
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12 mb-3">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <label class="col-form-label" for="validationCustom01">
+                                                Past History <span class="text-danger">*</span>
+                                            </label>
+                                        </div>
+                                        <div class="col-md-10">
+                                            <textarea class="form-control" id="validationCustom03" required rows="4"
+                                                placeholder="Enter Past History"></textarea>
+                                            <div class="invalid-feedback">
+                                                Please enter Past History
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12 mb-3">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <label class="col-form-label" for="validationCustom01">
+                                               Comorbid Conditions <span class="text-danger">*</span>
+                                            </label>
+                                        </div>
+                                        <div class="col-md-10">
+                                            <textarea class="form-control" id="validationCustom03" required rows="4"
+                                                placeholder="Comorbid Conditions"></textarea>
+                                            <div class="invalid-feedback">
+                                                Please enter Comorbid Conditions
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12 mb-3">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <label class="col-form-label" for="validationCustom01">
+                                               Habits & Advice <span class="text-danger">*</span>
+                                            </label>
+                                        </div>
+                                        <div class="col-md-10">
+                                            <textarea class="form-control" id="validationCustom03" required rows="4"
+                                                placeholder="Habits & Advice"></textarea>
+                                            <div class="invalid-feedback">
+                                                Please enter Habits & Advice
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                
+                                <div class="col-md-12 mb-3">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <label class="col-form-label" for="validationCustom01">
+                                            Family History <span class="text-danger">*</span>
+                                            </label>
+                                        </div>
+                                        <div class="col-md-10">
+                                            <textarea class="form-control" id="validationCustom03" required rows="4"
+                                                placeholder=" Family History"></textarea>
+                                            <div class="invalid-feedback">
+                                                Please enter  Family History
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12 mb-3">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <label class="col-form-label" for="validationCustom01">
+                                            Medication Being Taken <span class="text-danger">*</span>
+                                            </label>
+                                        </div>
+                                        <div class="col-md-10">
+                                            <textarea class="form-control" id="validationCustom03" required rows="4"
+                                                placeholder=" Medication Being Taken"></textarea>
+                                            <div class="invalid-feedback">
+                                                Please enter  Medication Being Taken
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12 mb-3">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <label class="col-form-label" for="validationCustom01">
+                                            Medication Examination <span class="text-danger">*</span>
+                                            </label>
+                                        </div>
+                                        <div class="col-md-10">
+                                            <textarea class="form-control" id="validationCustom03" required rows="4"
+                                                placeholder=" MExamination"></textarea>
+                                            <div class="invalid-feedback">
+                                                Please enter  Examination
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12 mb-3">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <label class="col-form-label" for="validationCustom01">
+                                            Any Known Allergies<span class="text-danger">*</span>
+                                            </label>
+                                        </div>
+                                        <div class="col-md-10">
+                                            <textarea class="form-control" id="validationCustom03" required rows="4"
+                                                placeholder=" Any Known Allergies"></textarea>
+                                            <div class="invalid-feedback">
+                                                Please enter  Any Known Allergies
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12 mb-3">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <label class="col-form-label" for="validationCustom01">
+                                            Diagnosis<span class="text-danger">*</span>
+                                            </label>
+                                        </div>
+                                        <div class="col-md-10">
+                                            <textarea class="form-control" id="validationCustom03" required rows="4"
+                                                placeholder=" Diagnosis"></textarea>
+                                            <div class="invalid-feedback">
+                                                Please enter  Diagnosis
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12 mb-3">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <label class="col-form-label" for="validationCustom01">
+                                            Special Comments / Next FollowUp<span class="text-danger">*</span>
+                                            </label>
+                                        </div>
+                                        <div class="col-md-10">
+                                            <textarea class="form-control" id="validationCustom03" required rows="4"
+                                                placeholder=" Special Comments / Next FollowUp"></textarea>
+                                            <div class="invalid-feedback">
+                                                Please enter  Special Comments / Next FollowUp
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-md-12">
-                    <div class="card">
-                        <div class="card-header p-2 text-info fw-bold">
-                            Billing Charges
-                            <span class="text-end">
-                                <button class="btn btn-success btn-sm" onclick="addRow()">&#43;</button>
-                            </span>
-                        </div>
-                        <div class="card-body">
-                            <div class="">
-                                <table class="table table-bordered">
-                                    <thead class="table-light">
-                                        <tr>
-                                            <th>S. No.</th>
-                                            <th>Charge Name</th>
-                                            <th>Doctor Name</th>
-                                            <th>Unit</th>
-                                            <th>Rate</th>
-                                            <th>Amount</th>
-                                            <th>Refund</th>
-                                            <th>Ref. Amount</th>
-                                            <th>Action</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody id="dataTable"></tbody>
-                                </table>
-                            </div>
-                            <button class="btn btn-primary" onclick="saveData()">Save</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-12">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="row mt-3">
-                                <div class="col-md-4 mb-3">
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <label class="col-form-label" for="validationCustom01">Gross Amt.
-                                                <span class="text-danger">*</span>
-                                            </label>
-                                        </div>
-                                        <div class="col-md-8">
-                                            <input type="number" class="form-control" id="validationCustom01"
-                                                placeholder="Gross Amt...." required>
-                                            <div class="invalid-feedback">
-                                                Please enter a Gross Amt.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 mb-3">
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <label class="col-form-label" for="validationCustom01"> Disc. %
-                                                <span class="text-danger">*</span>
-                                            </label>
-                                        </div>
-                                        <div class="col-md-8">
-                                            <input type="number" class="form-control" id="validationCustom01"
-                                                placeholder="Disc. %...." required>
-                                            <div class="invalid-feedback">
-                                                Please enter a Disc. %
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 mb-3">
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <label class="col-form-label" for="validationCustom01">Disc. Amt.
-                                                <span class="text-danger">*</span>
-                                            </label>
-                                        </div>
-                                        <div class="col-md-8">
-                                            <input type="number" class="form-control" id="validationCustom01"
-                                                placeholder="Disc. Amt....." required>
-                                            <div class="invalid-feedback">
-                                                Please enter a Disc. Amt.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 mb-3">
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <label class="col-form-label" for="validationCustom01">Disc. By
-                                                <span class="text-danger">*</span>
-                                            </label>
-                                        </div>
-                                        <div class="col-md-8">
-                                            <input type="number" class="form-control" id="validationCustom01"
-                                                placeholder="Disc. By....." required>
-                                            <div class="invalid-feedback">
-                                                Please enter a Disc. By
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 mb-3">
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <label class="col-form-label" for="validationCustom01">Total
-                                                <span class="text-danger">*</span>
-                                            </label>
-                                        </div>
-                                        <div class="col-md-8">
-                                            <input type="number" class="form-control" id="validationCustom01"
-                                                placeholder="Total....." required>
-                                            <div class="invalid-feedback">
-                                                Please enter a Total
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 mb-3">
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <label class="col-form-label" for="validationCustom01">Payment Mode*
-                                                <span class="text-danger">*</span>
-                                            </label>
-                                        </div>
-                                        <div class="col-md-8">
-                                            <select class="default-select wide form-control">
-                                                <option value=" ">--Select Payment Mode* --</option>
-                                                <option value=" ">Cash</option>
-                                                <option value="">Card</option>
-                                                <option value="">UPI</option>
-
-                                            </select>
-                                            <div class="invalid-feedback">
-                                                Please select
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 mb-3">
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <label class="col-form-label" for="validationCustom01">Debit A/c.
-                                                <span class="text-danger">*</span>
-                                            </label>
-                                        </div>
-                                        <div class="col-md-8">
-                                            <input type="number" class="form-control" id="validationCustom01"
-                                                placeholder="Debit A/c......" required>
-                                            <div class="invalid-feedback">
-                                                Please enter a Debit A/c.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
                 <div class="col-md-12">
                     <div class="card">
                         <div class="card-body">
                             <div class="mt-2">
-                                <button class="btn btn-primary">Save All</button>
+                                <button class="btn btn-primary">Save</button>
+                                <button class="btn btn-primary ms-2">Print</button>
                             </div>
                         </div>
                     </div>
@@ -515,65 +460,3 @@
 <!-- footer close -->
 
 
-<!-- dynamic column -->
-
-<script>
-document.addEventListener("DOMContentLoaded", loadTable); // Load table data on page load
-
-function addRow(sno = "", chargename = "", doctorname = "", unit = "", rate = "", amount = "", refund = "", refamount =
-    "") {
-    let table = document.getElementById("dataTable");
-    let row = table.insertRow();
-    row.innerHTML = `
-        <td><input type="text" class="form-control" value="${sno}"></td>
-        <td><input type="text" class="form-control" value="${chargename}"></td>
-        <td><input type="text" class="form-control" value="${doctorname}"></td>
-        <td><input type="text" class="form-control" value="${unit}"></td>
-        <td><input type="text" class="form-control" value="${rate}"></td>
-        <td><input type="text" class="form-control" value="${amount}"></td>
-        <td><input type="text" class="form-control" value="${refund}"></td>
-        <td><input type="text" class="form-control" value="${refamount}"></td>
-        <td>
-            <button class="btn btn-danger btn-sm text-white" onclick="deleteRow(this)"><i class="fa fa-close"></i></button>
-        </td>`;
-}
-
-function deleteRow(btn) {
-    let row = btn.parentNode.parentNode;
-    row.parentNode.removeChild(row);
-    saveData(); // Save data after deletion
-}
-
-function saveData() {
-    let table = document.getElementById("dataTable");
-    let data = [];
-
-    for (let i = 0; i < table.rows.length; i++) {
-        let row = table.rows[i].cells;
-        let rowData = {
-            sno: row[0].querySelector("input").value,
-            chargename: row[1].querySelector("input").value,
-            doctorname: row[2].querySelector("input").value,
-            unit: row[3].querySelector("input").value,
-            rate: row[4].querySelector("input").value,
-            amount: row[5].querySelector("input").value,
-            refund: row[6].querySelector("input").value,
-            refamount: row[7].querySelector("input").value // Corrected index
-        };
-        data.push(rowData);
-    }
-
-    localStorage.setItem("tableData", JSON.stringify(data));
-}
-
-function loadTable() {
-    let savedData = localStorage.getItem("tableData");
-    if (savedData) {
-        let rows = JSON.parse(savedData);
-        rows.forEach(row => {
-            addRow(row.sno, row.chargename, row.doctorname, row.unit, row.rate, row.amount, row.refund, row
-                .refamount);
-        });
-    }
-}
-</script>
