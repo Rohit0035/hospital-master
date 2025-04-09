@@ -14713,7 +14713,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
           [data-layout="horizontal"] .deznav .metismenu > li:hover > a, [data-layout="horizontal"] .deznav .metismenu > li.mm-active > a {
             color: var(--primary); }
             [data-layout="horizontal"] .deznav .metismenu > li:hover > a i, [data-layout="horizontal"] .deznav .metismenu > li.mm-active > a i {
-              color: #fff;
+              color: var(--primary);
               background: transparent;
               box-shadow: none; }
           [data-layout="horizontal"] .deznav .metismenu > li:hover ul li > a:after, [data-layout="horizontal"] .deznav .metismenu > li.mm-active ul li > a:after {

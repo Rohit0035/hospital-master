@@ -77,11 +77,13 @@
             </div>
         </div>
     </div>
+</div>
 
-    <!--**********************************
+
+<!--**********************************
             Content body end
 ***********************************-->
 
-    <!-- footer start -->
-    <?php include 'footer.php';?>
-    <!-- footer close -->
+<!-- footer start -->
+<?php include 'footer.php';?>
+<!-- footer close -->

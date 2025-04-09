@@ -166,8 +166,11 @@
                                 </div>
                             </div>
                             <div class="col-md-3 mb-3">
-                                <button class="btn btn-info">Print</button>
-                                <button class="btn btn-info ms-2">Cancel</button>
+                                <button class="btn btn-info">Load</button>
+                                <button class="btn btn-info" onclick="printTable()">Print</button>
+                                <button class="btn btn-info" onclick="changeFontSize(-1)">A-</button>
+                                <button class="btn btn-info" onclick="changeFontSize(1)">A+</button>
+                                <button class="btn btn-info ">Cancel</button>
                             </div>
                         </div>
                     </div>
@@ -177,57 +180,126 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="table-responsive">
-                            <table id="example4" class="display table" style="min-width: 1000px">
-                                <thead>
-                                    <tr>
-                                        <th>S.No</th>
-                                        <th>OPD ID</th>
-                                        <th>UHID No.</th>
-                                        <th>Casualty</th>
-                                        <th>Status</th>
-                                        <th>Patient Name</th>
-                                        <th>Sex</th>
-                                        <th>Address</th>
-                                        <th>Consultant</th>
-                                        <th>Department</th>
-                                        <th>G. Amt.</th>
-                                        <th>Disc % / Amt.</th>
-                                        <th>Amount</th>
-                                        <th>Mode</th>
-                                        <th>User</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>OPD12345</td>
-                                        <td>UHID12345</td>
-                                        <td>No</td>
-                                        <td>Active</td>
-                                        <td>John Doe</td>
-                                        <td>Male</td>
-                                        <td>123 Street, ...</td>
-                                        <td>Dr. Smith</td>
-                                        <td>Cardiology</td>
-                                        <td>500</td>
-                                        <td>10% / 50</td>
-                                        <td>450</td>
-                                        <td>Cash</td>
-                                        <td>testtest</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            <div id="printableTable">
+                                <h2 style="text-align: center;">DR. PERWEZ HOSPITAL</h2>
+                                <p style="text-align: center;">OPD Registration Report From 22/Mar/2025 To 22/Mar/2025
+                                </p>
+                                <p>Type: All | OPD Type: All</p>
+
+                                <table class="table" id="opdTable" border="1" width="100%"
+                                    style="border-collapse: collapse; text-align: left;">
+                                    <thead>
+                                        <tr>
+                                            <th>S.No.</th>
+                                            <th>OPD No.</th>
+                                            <th>UHID No.</th>
+                                            <th>Casualty</th>
+                                            <th>Status</th>
+                                            <th>Patient Name</th>
+                                            <th>Sex</th>
+                                            <th>Address</th>
+                                            <th>Consultant Name</th>
+                                            <th>Department</th>
+                                            <th>G. Amt.</th>
+                                            <th>Disc % / Amt.</th>
+                                            <th>Amount Pay.</th>
+                                            <th>Mode</th>
+                                            <th>User</th>
+                                            <th>Org Name</th>
+                                            <th>Disc Reason</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>5146</td>
+                                            <td>3756</td>
+                                            <td>No</td>
+                                            <td>Old</td>
+                                            <td>SHAKEELA AKHTAR</td>
+                                            <td>Female</td>
+                                            <td>ASOLI, UPS</td>
+                                            <td>DR. PERWEZ</td>
+                                            <td>Cardiology Department</td>
+                                            <td>900.00</td>
+                                            <td>0.00</td>
+                                            <td>900.00</td>
+                                            <td>Cash</td>
+                                            <td>admin</td>
+                                            <td>Dr. Perwez Hospital</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>5147</td>
+                                            <td>3742</td>
+                                            <td>No</td>
+                                            <td>New</td>
+                                            <td>RUKH DEV</td>
+                                            <td>Male</td>
+                                            <td>FARIDPUR</td>
+                                            <td>DR. FAISAL ALIM</td>
+                                            <td>General & Laparoscopic Surgery</td>
+                                            <td>900.00</td>
+                                            <td>0.00</td>
+                                            <td>900.00</td>
+                                            <td>Cash</td>
+                                            <td>admin</td>
+                                            <td>Dr. Perwez Hospital</td>
+                                            <td>-</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <p>Total Patients: 19 | New Patients: 9 | Old: 10 | Casualty: 0</p>
+                                <p>Total Amt: 9000.00 | Cash: 9000.00</p>
+                                <p>Type: All | OPD Type: All</p>
+                                <p style="text-align: right;">Printed on 22/Mar/2025 16:23</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
-    <!--**********************************
+<!--**********************************
             Content body end
 ***********************************-->
 
-    <!-- footer start -->
-    <?php include 'footer.php';?>
-    <!-- footer close -->
+<!-- footer start -->
+<?php include 'footer.php';?>
+<!-- footer close -->
+
+
+<!-- js for print -->
+
+<script>
+function printTable() {
+    var printContents = document.getElementById("printableTable").innerHTML;
+    var originalContents = document.body.innerHTML;
+
+    document.body.innerHTML = "<html><head><title>Print</title></head><body>" + printContents + "</body></html>";
+
+    window.print();
+
+    document.body.innerHTML = originalContents;
+    location.reload();
+}
+</script>
+
+<!-- js for font-size dynamically -->
+<script>
+function changeFontSize(value) {
+    let table = document.getElementById("opdTable");
+    let currentSize = parseInt(window.getComputedStyle(table).fontSize);
+    table.style.fontSize = (currentSize + value) + "px";
+
+    let headers = document.querySelectorAll("#opdTable th");
+    headers.forEach(th => {
+        let currentThSize = parseInt(window.getComputedStyle(th).fontSize);
+        th.style.fontSize = (currentThSize + value) + "px";
+    });
+}
+</script>

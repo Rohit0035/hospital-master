@@ -1042,7 +1042,7 @@
                 <ul class="metismenu" id="menu">
                     <li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
                             <div class="menu-icon">
-                                <i class="fa fa-user-md" aria-hidden="true"></i>
+                                <i class="fa fa-th" aria-hidden="true"></i>
                             </div>
                             <span class="nav-text">Master</span>
                         </a>
@@ -1070,7 +1070,7 @@
                     </li>
                     <li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
                             <div class="menu-icon">
-                                <i class="fa fa-user-md" aria-hidden="true"></i>
+                                <i class="fa fa-file" aria-hidden="true"></i>
                             </div>
                             <span class="nav-text">OPD</span>
                         </a>
@@ -1089,8 +1089,8 @@
                                 <a class="has-arrow" href="javascript:void(0);" aria-expanded="false">Reports</a>
                                 <ul aria-expanded="false">
                                     <li><a href="opd-report-opdregistration.php">OPD Registration</a></li>
-                                    <li><a href="area-wise-opd-registration.html">Area Wise OPD Registration</a></li>
-                                    <li><a href="department-wise-opd-registration.html">Department Wise OPD
+                                    <li><a href="opd-report-areawiseopd.php">Area Wise OPD Registration</a></li>
+                                    <li><a href="opd-report-departwise.php">Department Wise OPD
                                             Registration</a></li>
                                     <li><a href="case-wise-opd-registration.html">Case Wise OPD Registration</a></li>
                                     <li><a href="consultant-opd-registration.html">Consultant OPD Registration</a></li>
@@ -1106,7 +1106,7 @@
                     </li>
                     <li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
                             <div class="menu-icon">
-                                <i class="fa fa-user-md" aria-hidden="true"></i>
+                                <i class="fa fa-file" aria-hidden="true"></i>
                             </div>
                             <span class="nav-text">IPD</span>
                         </a>
@@ -1121,7 +1121,7 @@
                             <li><a class="has-arrow" href="javascript:void(0);" aria-expanded="false">Transaction</a>
                                 <ul aria-expanded="false">
                                     <li><a href="ipd-tran-ipdregistration.php">IPD Registration</a></li>
-                                    <li><a href="payment-receive.php">Payment Receive</a></li>
+                                    <li><a href="ipd-tran-paymentrecive.php">Payment Receive</a></li>
                                     <li><a href="room-change.php">Room Change</a></li>
                                     <li><a href="bill-charges.php">Bill Charges</a></li>
                                     <li><a href="delivery.php">Delivery</a></li>
@@ -1161,7 +1161,7 @@
                     </li>
                     <li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
                             <div class="menu-icon">
-                                <i class="fa fa-user-md" aria-hidden="true"></i>
+                                <i class="fa fa-file-text" aria-hidden="true"></i>
                             </div>
                             <span class="nav-text">MIS</span>
                         </a>
@@ -1197,7 +1197,7 @@
                     </li>
                     <li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
                             <div class="menu-icon">
-                                <i class="fa fa-user-md" aria-hidden="true"></i>
+                                <i class="fa fa-plus-square" aria-hidden="true"></i>
                             </div>
                             <span class="nav-text">Medical Store</span>
                         </a>
@@ -1269,7 +1269,7 @@
                     </li>
                     <li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
                             <div class="menu-icon">
-                                <i class="fa fa-user-md" aria-hidden="true"></i>
+                                <i class="fas fa-tools" aria-hidden="true"></i>
                             </div>
                             <span class="nav-text">Utility</span>
                         </a>
@@ -1288,7 +1288,7 @@
                                 <a class="has-arrow" href="javascript:void(0);" aria-expanded="false">Reports</a>
                                 <ul aria-expanded="false">
                                     <li><a href="opd-registration.html">OPD Registration</a></li>
-                                    <li><a href="area-wise-opd-registration.html">Area Wise OPD Registration</a></li>
+                                    <li><a href="opd-report-areawiseopd.php">Area Wise OPD Registration</a></li>
                                     <li><a href="department-wise-opd-registration.html">Department Wise OPD
                                             Registration</a></li>
                                     <li><a href="case-wise-opd-registration.html">Case Wise OPD Registration</a></li>
@@ -1305,7 +1305,7 @@
                     </li>
                     <li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
                             <div class="menu-icon">
-                                <i class="fa fa-user-md" aria-hidden="true"></i>
+                                <i class="fa fa-comments" aria-hidden="true"></i>
                             </div>
                             <span class="nav-text">Messaging</span>
                         </a>
