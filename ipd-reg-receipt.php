@@ -46,24 +46,27 @@
 
     <hr style="border-top: 1px solid black;">
 
-    <div style="margin-top: 10px;">
-        <p><strong>Payment Mode:</strong> Cash</p>
+    <div style="display: flex; justify-content: space-between; margin-top: 10px;">
+        <div style="margin-top: 10px;">
+            <p><strong>Payment Mode:</strong> Cash</p>
+        </div>
+        <div>
+            <table style="width: 100%; border-collapse: collapse;">
+                <tr>
+                    <td style="padding: 5px;"><strong>Gross Total:</strong></td>
+                    <td style="text-align: right; padding: 5px;">500.00</td>
+                </tr>
+                <tr>
+                    <td style="padding: 5px;"><strong>Discount:</strong></td>
+                    <td style="text-align: right; padding: 5px;">0.00%</td>
+                </tr>
+                <tr>
+                    <td style="padding: 5px;"><strong>Net Amount:</strong></td>
+                    <td style="text-align: right; padding: 5px;">1000.00</td>
+                </tr>
+            </table>
+        </div>
     </div>
-
-    <table style="width: 100%; border-collapse: collapse;">
-        <tr>
-            <td style="padding: 5px;"><strong>Gross Total:</strong></td>
-            <td style="text-align: right; padding: 5px;">500.00</td>
-        </tr>
-        <tr>
-            <td style="padding: 5px;"><strong>Discount:</strong></td>
-            <td style="text-align: right; padding: 5px;">0.00%</td>
-        </tr>
-        <tr>
-            <td style="padding: 5px;"><strong>Net Amount:</strong></td>
-            <td style="text-align: right; padding: 5px;">1000.00</td>
-        </tr>
-    </table>
 
     <div style="display: flex; justify-content: space-between; margin-top: 20px;">
         <p><strong>Prepared By:</strong> admin</p>
@@ -72,8 +75,8 @@
 
     <hr style="border-top: 1px solid black;">
 
-    <div style="margin-top: 20px;">
-        <p style="font-size: 12px; text-align: center;">Not Valid For Medicolegal Purposes</p>
+    <div style="margin-top: 15px;">
+        <p style="font-size: 12px; text-align: right;">Not Valid For Medicolegal Purposes</p>
     </div>
 
 </body>
