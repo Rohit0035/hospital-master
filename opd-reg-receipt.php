@@ -1,71 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>OPD Receipt</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Receipt</title>
 </head>
 
-<body style="font-family: Arial, sans-serif; width: 700px; margin: auto; border: 1px solid #000; padding: 20px;">
-    <div style="text-align: center; border-bottom: 2px solid black; padding-bottom: 10px;">
+<body style="font-family: Arial, sans-serif; width: 90%; margin: auto; padding: 20px;">
+    <div style="text-align: center;">
         <h2 style="margin: 0;">DR. PERWEZ HOSPITAL</h2>
-        <p style="margin: 5px 0; font-size: 14px;">DR. A. RAHMAN CAMPUS, CHHATAUNI ROAD, MOTIHARI</p>
-        <p style="margin: 5px 0; font-size: 14px;">(M.J. HEART HOSPITAL & RESEARCH INSTITUTE)</p>
-        <h3 style="margin: 10px 0;">OPD Receipt</h3>
+        <p style="margin: 0;">DR. A. RAHMAN CAMPUS, CHHATAUNI ROAD, MOTIHARI</p>
+        <p style="margin: 0;">(M.J. HEART HOSPITAL & RESEARCH INSTITUTE)</p>
+        <p style="font-weight: bold;">OPD Receipt</p>
     </div>
 
-    <table style="width: 100%; font-size: 14px; margin-top: 10px;">
-        <tr>
-            <td>Receipt No.: <b>3604</b></td>
-            <td style="text-align: right;">Date & Time: <b>22/Mar/2025 12:58</b></td>
-        </tr>
-        <tr>
-            <td>UHID No.: <b>9746</b></td>
-            <td style="text-align: right;">OPD No.: <b>5318</b></td>
-        </tr>
-        <tr>
-            <td>Patient Name: <b>Mr. MAZHAR</b></td>
-            <td style="text-align: right;">Age/Sex: <b>33 Years / Male</b></td>
-        </tr>
-        <tr>
-            <td>Consultant Name: <b>DR. PERWEZ</b></td>
-            <td style="text-align: right;">Valid Upto: <b>23/Mar/2025</b></td>
-        </tr>
-        <tr>
-            <td>Serial No.: <b>13</b></td>
-        </tr>
-    </table>
+    <div style="display: flex; justify-content: space-between; margin-top: 10px;">
+        <div>
+            <p><strong>Receipt No.:</strong> 3658</p>
+            <p><strong>UHD No.:</strong> 9785</p>
+            <p><strong>Patient Name:</strong> Ms. SOBHA DEVI</p>
+            <p><strong>Consultant Name:</strong> DR. FAISAL ALAM</p>
+        </div>
+        <div style="text-align: right;">
+            <p><strong>Date & Time:</strong> 31/Mar/2022 17:58</p>
+            <p><strong>OPD No.:</strong> 5415</p>
+            <p><strong>Age/Sex:</strong> 30 Years / Female</p>
+            <p><strong>Valid Upto:</strong> 15/Apr/2025</p>
+            <p><strong>Serial No.:</strong> 1</p>
+        </div>
+    </div>
 
-    <table style="width: 100%; border-collapse: collapse; margin-top: 20px; font-size: 14px;">
-        <tr style="border-bottom: 1px solid black;">
-            <th style="text-align: left; padding: 5px;">Charge Name</th>
-            <th style="text-align: right; padding: 5px;">Amount</th>
+    <hr style="border-top: 1px solid black;">
+
+    <table style="width: 100%; border-collapse: collapse; margin-top: 10px;">
+        <tr>
+            <th style="border-bottom: 1px solid black; text-align: left; padding: 5px;">Charge Name</th>
+            <th style="border-bottom: 1px solid black; text-align: right; padding: 5px;">Amount</th>
         </tr>
         <tr>
             <td style="padding: 5px;">OPD Registration Fee</td>
+            <td style="padding: 5px; text-align: right;">500.00</td>
+        </tr>
+    </table>
+
+    <hr style="border-top: 1px solid black;">
+
+    <div style="margin-top: 10px;">
+        <p><strong>Payment Mode:</strong> Cash</p>
+    </div>
+
+    <table style="width: 100%; border-collapse: collapse;">
+        <tr>
+            <td style="padding: 5px;"><strong>Gross Total:</strong></td>
             <td style="text-align: right; padding: 5px;">500.00</td>
         </tr>
-    </table>
-
-    <table style="width: 100%; margin-top: 20px; font-size: 14px;">
         <tr>
-            <td>Payment Mode: <b>Cash</b></td>
-            <td style="text-align: right;">Gross Total: <b>500.00</b></td>
+            <td style="padding: 5px;"><strong>Discount:</strong></td>
+            <td style="text-align: right; padding: 5px;">0.00%</td>
         </tr>
         <tr>
-            <td></td>
-            <td style="text-align: right;">Net Amount: <b>500.00</b></td>
+            <td style="padding: 5px;"><strong>Net Amount:</strong></td>
+            <td style="text-align: right; padding: 5px;">1000.00</td>
         </tr>
     </table>
 
-    <table style="width: 100%; margin-top: 40px; font-size: 14px;">
-        <tr>
-            <td>Prepared By: <b>ADMIN</b></td>
-            <td style="text-align: right;">Authorized Signatory</td>
-        </tr>
-    </table>
+    <div style="display: flex; justify-content: space-between; margin-top: 20px;">
+        <p><strong>Prepared By:</strong> admin</p>
+        <p style="text-align: right;"><strong>Authorized Signatory</strong></p>
+    </div>
 
-    <p style="margin-top: 20px; font-size: 12px; text-align: center;">Printed on 22/Mar/2025 13:03</p>
-    <p style="font-size: 12px; text-align: center; font-weight: bold;">Not Valid For Medicolegal Purposes</p>
+    <hr style="border-top: 1px solid black;">
+
+    <div style="margin-top: 20px;">
+        <p style="font-size: 12px; text-align: center;">Not Valid For Medicolegal Purposes</p>
+    </div>
+
 </body>
 
 </html>
